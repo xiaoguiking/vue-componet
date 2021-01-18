@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <nav-bar :fieldData="fieldData" :curIndex="curIndex" />
+    <course-list :courseData="courseData" />
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 import { DEFAULT_ITEM } from "@/configs/config.js";
 import IndexModel from "@/models/index";
 import NavBar from "@/components/NavBar";
+import CourseList from "@/components/CourseList";
 const indexModel = new IndexModel();
 
 export default {
@@ -21,6 +23,7 @@ export default {
   },
   components: {
     NavBar,
+    CourseList,
   },
   mounted() {
     this.getDatas();
