@@ -15,8 +15,8 @@ export default {
   props: {
     item: Object,
     index: Number,
-    curIndex: Number,
-  },
+    curIndex: Number
+  }
 };
 </script>
 

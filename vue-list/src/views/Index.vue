@@ -18,12 +18,12 @@ export default {
     return {
       fieldData: [],
       courseData: [],
-      curIndex: 0,
+      curIndex: 0
     };
   },
   components: {
     NavBar,
-    CourseList,
+    CourseList
   },
   mounted() {
     this.getDatas();
@@ -35,8 +35,8 @@ export default {
       this.fieldData = DEFAULT_ITEM.concat(fieldData);
       this.courseData = courseData;
       console.log(fieldData, courseData, "----------->");
-    },
-  },
+    }
+  }
 };
 </script>
 
