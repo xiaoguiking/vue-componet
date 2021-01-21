@@ -15,11 +15,11 @@ import CourseItem from "./CourseItem";
 export default {
   name: "CourseList",
   props: {
-    courseData: Array,
+    courseData: Array
   },
   components: {
-    "course-item": CourseItem,
-  },
+    "course-item": CourseItem
+  }
 };
 </script>
 

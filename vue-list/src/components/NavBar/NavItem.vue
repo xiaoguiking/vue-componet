@@ -2,6 +2,7 @@
   <div class="nav-item">
     <a
       href="javascript:;"
+      @click="select(index)"
       :class="['nav-lk', { 'nav-cur': index === curIndex }]"
     >
       {{ item.field_names }}
@@ -15,8 +16,14 @@ export default {
   props: {
     item: Object,
     index: Number,
-    curIndex: Number
-  }
+    curIndex: Number,
+  },
+  methods: {
+    select(index) {
+      console.log(index);
+      // this.$emit("selectNav", index);
+    },
+  },
 };
 </script>
 

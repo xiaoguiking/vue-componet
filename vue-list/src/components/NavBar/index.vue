@@ -6,6 +6,7 @@
       :item="item"
       :index="index"
       :curIndex="curIndex"
+      @selectNav="selectNav"
     ></nav-item>
   </div>
 </template>
@@ -15,11 +16,17 @@ import NavItem from "./NavItem";
 export default {
   props: {
     fieldData: Array,
-    curIndex: Number
+    curIndex: Number,
   },
   components: {
-    "nav-item": NavItem
-  }
+    "nav-item": NavItem,
+  },
+  methods: {
+    select(index) {
+      console.log(index);
+      this.$emit("selectNav", index);
+    },
+  },
 };
 </script>
 

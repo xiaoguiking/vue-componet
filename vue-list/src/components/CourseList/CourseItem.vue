@@ -31,20 +31,14 @@ export default {
   },
   methods: {
     mouseOver() {
-      console.log("移入");
-      const refl = this.$refs.refl;
-      refl.style.opacity = 1;
-      const card = this.$refs.card;
-      card.style.transform = `perspective(500px) scale(2)`;
+      // console.log("鼠标移到某元素之上");
     },
     mouseLeave() {
-      const card = this.$refs.card;
-      const refl = this.$refs.refl;
-      card.style.transform = `perspective(500px) scale(1)`;
-      refl.style.opacity = 0;
-      console.log("移出");
+      // console.log("移出");
     },
-    mouseMove() {},
+    mouseMove() {
+      // console.log("鼠标被移动");
+    },
   },
 };
 </script>

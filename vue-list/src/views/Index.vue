@@ -1,15 +1,21 @@
 <template>
   <div class="container">
-    <nav-bar :fieldData="fieldData" :curIndex="curIndex" />
+    <nav-bar
+      :fieldData="fieldData"
+      :curIndex="curIndex"
+      @selectNav="selectNav"
+    />
     <course-list :courseData="courseData" />
   </div>
 </template>
 
 <script>
-import { DEFAULT_ITEM } from "@/configs/config.js";
+import { DEFAULT_ITEM, DEFAULT_FIELD } from "@/configs/config.js";
 import IndexModel from "@/models/index";
 import NavBar from "@/components/NavBar";
 import CourseList from "@/components/CourseList";
+import { filterData } from "@/utils/tool";
+
 const indexModel = new IndexModel();
 
 export default {
@@ -18,12 +24,13 @@ export default {
     return {
       fieldData: [],
       courseData: [],
-      curIndex: 0
+      curCourseData: [],
+      curIndex: 0,
     };
   },
   components: {
     NavBar,
-    CourseList
+    CourseList,
   },
   mounted() {
     this.getDatas();
@@ -34,9 +41,16 @@ export default {
         courseData = await indexModel.getCourseData();
       this.fieldData = DEFAULT_ITEM.concat(fieldData);
       this.courseData = courseData;
-      console.log(fieldData, courseData, "----------->");
-    }
-  }
+      console.log(courseData, "----------->");
+
+      this.courseData = filterData(this.courseData, DEFAULT_FIELD);
+    },
+    selectNav(index, field) {
+      console.log(index, "------index --");
+      this.curIndex = index;
+      this.curCourseData = filterData(this.courseData, field);
+    },
+  },
 };
 </script>
 
