@@ -4,8 +4,15 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    tabIndex: 0,
+  },
+  mutations: {
+    changeTabIndex(state, index) {
+      state.tabIndex = index;
+      console.log(state.tabIndex, "--------state.tabIndex------>");
+    },
+  },
   actions: {},
-  modules: {}
+  modules: {},
 });

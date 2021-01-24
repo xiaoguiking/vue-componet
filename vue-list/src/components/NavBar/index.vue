@@ -5,9 +5,11 @@
       :key="index"
       :item="item"
       :index="index"
-      :curIndex="curIndex"
-      @selectNav="selectNav"
-    ></nav-item>
+      :curIdx="curIdx"
+      @click="selectNav(curIndex)"
+    >
+      ></nav-item
+    >
   </div>
 </template>
 
@@ -16,17 +18,23 @@ import NavItem from "./NavItem";
 export default {
   props: {
     fieldData: Array,
-    curIndex: Number,
+    curIdx: Number,
+    selectNav: Function
   },
   components: {
-    "nav-item": NavItem,
+    "nav-item": NavItem
   },
+  // methods: {
+  //   select(index) {
+  //     console.log(index);
+  //     this.$emit("selectNav", index);
+  //   }
+  // }
   methods: {
-    select(index) {
-      console.log(index);
-      this.$emit("selectNav", index);
-    },
-  },
+    select(curIdx) {
+      console.log(curIdx);
+    }
+  }
 };
 </script>
 

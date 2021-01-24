@@ -2,10 +2,11 @@
   <div class="container">
     <nav-bar
       :fieldData="fieldData"
-      :curIndex="curIndex"
-      @selectNav="selectNav"
+      :curIdx="curIdx"
+      @selectNav="selectNav(index)"
     />
-    <course-list :courseData="courseData" />
+    <!-- <course-list :courseData="curCourseData" /> -->
+    <course-list :courseData="curCourseData" />
   </div>
 </template>
 
@@ -25,12 +26,12 @@ export default {
       fieldData: [],
       courseData: [],
       curCourseData: [],
-      curIndex: 0,
+      curIdx: 1
     };
   },
   components: {
     NavBar,
-    CourseList,
+    CourseList
   },
   mounted() {
     this.getDatas();
@@ -46,11 +47,11 @@ export default {
       this.courseData = filterData(this.courseData, DEFAULT_FIELD);
     },
     selectNav(index, field) {
-      console.log(index, "------index --");
-      this.curIndex = index;
+      console.log(index, "------index--");
+      this.curIdx = index;
       this.curCourseData = filterData(this.courseData, field);
-    },
-  },
+    }
+  }
 };
 </script>
 

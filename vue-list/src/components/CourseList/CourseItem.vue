@@ -27,7 +27,7 @@
 export default {
   name: "CourseItem",
   props: {
-    item: Object,
+    item: Object
   },
   methods: {
     mouseOver() {
@@ -38,8 +38,8 @@ export default {
     },
     mouseMove() {
       // console.log("鼠标被移动");
-    },
-  },
+    }
+  }
 };
 </script>
 

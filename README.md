@@ -28,3 +28,8 @@
   index ---------> CourseItem v-for
   CourseItem
   https://www.html5tricks.com/demo/vue-image-hover-animation/index.html
+
+## vue 指令
+
+- Tab 选项卡功能组件
+- Vue.filter 过滤器
