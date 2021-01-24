@@ -1,14 +1,11 @@
 <template>
-  <div
-    :class="['nav-item', { 'nav-current': index === tabIndex }]"
-    @click="changeTabIndex(index)"
-  >
+  <div @click="changeTabIndex(index)" class="nav-item">
     {{ item | replaceNumToChs }}
   </div>
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
+import { mapMutations } from "vuex";
 import { replaceNumToChs } from "@/filters";
 export default {
   name: "NavItem",
@@ -19,9 +16,6 @@ export default {
   // 注册过滤器
   filters: {
     replaceNumToChs,
-  },
-  computed: {
-    ...mapState(["tabIndex"]),
   },
   methods: {
     ...mapMutations(["changeTabIndex"]),

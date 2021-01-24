@@ -11,15 +11,15 @@ import { replaceNumToChs } from "@/filters";
 export default {
   name: "TabContent",
   props: {
-    contentData: Array,
+    contentData: Array
   },
   // 注册过滤器
   filters: {
-    replaceNumToChs,
+    replaceNumToChs
   },
   computed: {
-    ...mapState(["tabIndex"]),
-  },
+    ...mapState(["tabIndex"])
+  }
 };
 </script>
 

@@ -16,14 +16,14 @@ export default {
   name: "Tab",
   components: {
     TabContent,
-    TabNav,
+    TabNav
   },
   data() {
     return {
       navData,
-      contentData,
+      contentData
     };
-  },
+  }
 };
 </script>
 

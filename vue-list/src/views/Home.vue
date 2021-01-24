@@ -11,13 +11,13 @@ import Tab from "@/components/Tab";
 export default {
   name: "Home",
   components: {
-    Tab,
+    Tab
   },
   data() {
     return {
-      msg: "vue Page",
+      msg: "vue Page"
     };
-  },
+  }
 };
 </script>
 <style lang="less" scoped>

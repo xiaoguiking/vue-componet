@@ -5,14 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    tabIndex: 0,
+    tabIndex: 0
   },
   mutations: {
     changeTabIndex(state, index) {
       state.tabIndex = index;
-      console.log(state.tabIndex, "--------state.tabIndex------>");
-    },
+      // console.log(state.tabIndex, "--------state.tabIndex------>");
+    }
   },
   actions: {},
-  modules: {},
+  modules: {}
 });

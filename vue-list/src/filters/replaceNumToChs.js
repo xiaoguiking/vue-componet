@@ -1,5 +1,5 @@
-export default (value) => {
-  return value.replace(/\d+/g, (node, key) => {
+export default value => {
+  return value.replace(/\d+/g, node => {
     return npmReplace(node);
   });
 };
