@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>媒体查询</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+      }
+      p {
+        text-align: center;
+        padding: 100px;
+        font-size: 100px;
+      }
+      /* min-width最小宽度  max-width： 最大宽度 */
+      /* >=  */
+      @media (min-width: 1100px) {
+        p {
+          background-color: red;
+          font-size: 80px;
+          color: chartreuse;
+        }
+      }
+      /*  >= 700px && <= 1099px */
+      @media (min-width: 700px) and (max-width: 1099px) {
+        p {
+          background-color: orange;
+          font-size: 60px;
+          color: blueviolet;
+        }
+      }
+      /*  >= 500px && <= 699px */
+      @media (min-width: 500px) and (max-width: 699px) {
+        p {
+          background-color: greenyellow;
+          font-size: 40px;
+          color: orangered;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 499px) {
+        p {
+          background-color: lightsalmon;
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Response layout</p>
+    </div>
+    <script>
+      document.documentElement.style.fontsize = "20px";
+      console.log(document.documentElement.style.fontsize);
+    </script>
+  </body>
+</html>
