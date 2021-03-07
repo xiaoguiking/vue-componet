@@ -1,7 +1,7 @@
 # vue-componet
 
 - vue 组件化流程
-- vue-vuex 购物车
+- vue-shopping-car 购物车
 
 [toc]
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>文字，测试demo ~ ~</p>
+    </div>
+    <input type="button" value="click me" name="username" id="inputname" />
+    <hr />
+    <div class="box">
+      <input type="button" value="username" id="inputEle" />
+    </div>
+    <div class="box1" style="margin-top: 50px">
+      <button>button</button>
+    </div>
+    <div class="box2" style="margin-top: 50px">
+      <input
+        type="text"
+        value="button"
+        placeholder="请输入你的密码"
+        id="inputBox2"
+      />
+    </div>
+    <script>
+      var div1 = document.querySelector(".div1");
+      div1.addEventListener("click", function (e) {
+        console.log(e, "div1");
+        document.querySelector("p").innerHTML = "change";
+      });
+
+      let inputName = document.querySelector("#inputname");
+      function handler(event) {
+        switch (event.type) {
+          case "click":
+            console.log("this is clicked me ");
+            break;
+          case "mouseover":
+            event.target.style.backgroundColor = "red";
+            console.log(event);
+            break;
+          case "mouseout":
+            event.target.style.backgroundColor = "blue";
+            break;
+          default:
+            break;
+        }
+      }
+      // inputName.onclick = handler;
+      inputName.onmouseover = handler;
+      inputName.onmouseout = handler;
+
+      let inputEle = document.getElementById("inputEle");
+      inputEle.onclick = function (e) {
+        console.log(e.target.value, "clicked");
+        if (e.target.value === "username") {
+          alert(1);
+        }
+        console.log(this.id, this, "==========");
+      };
+
+      let buttonEle = document.getElementsByTagName("button")[0];
+      buttonEle.onclick = function (event) {
+        console.log(event.eventPhase, "buttonEle");
+      };
+
+      document.body.onclick = function (event) {
+        console.log(event.eventPhase, "body");
+      };
+
+      document.body.addEventListener(
+        "click",
+        function () {
+          console.log(event.eventPhase, "监听捕获");
+        },
+        true
+      );
+
+      // 加载图片
+      window.addEventListener("load", function () {
+        let image = new Image();
+        // let image = document.createElement("img");
+        image.addEventListener("load", function (e) {
+          console.log("image load");
+        });
+        // document.body.append(image);
+        image.src = "./img/1.jpeg";
+      });
+
+      // 聚焦事件
+      var inputBox2 = document.querySelector("#inputBox2");
+      console.log(inputBox2);
+      inputBox2.addEventListener("focusin", function () {
+        console.log("focus聚焦");
+      });
+      inputBox2.addEventListener("blur", function () {
+        console.log("blur失去焦点");
+      });
+
+      document.body.addEventListener("mousewheel", function () {
+        console.log("鼠标滚轮事件");
+      });
+      document.body.addEventListener("click", function (e) {
+        // console.log("鼠标滚轮事件");
+        console.log(`鼠标点击${e.pageX} ~ ~ ${e.pageY} `);
+      });
+    </script>
+  </body>
+</html>
