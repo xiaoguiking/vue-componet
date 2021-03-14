@@ -16,7 +16,7 @@ var phoneDatacopy = [
         price: 20,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 2,
@@ -31,9 +31,9 @@ var phoneDatacopy = [
         price: 148,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
-      },
-    ],
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
+      }
+    ]
   },
   {
     shopId: 2,
@@ -52,9 +52,9 @@ var phoneDatacopy = [
         price: 181,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
-      },
-    ],
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
+      }
+    ]
   },
   {
     shopId: 3,
@@ -73,7 +73,7 @@ var phoneDatacopy = [
         price: 1999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 2,
@@ -88,14 +88,14 @@ var phoneDatacopy = [
         price: 999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
-      },
-    ],
-  },
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
+      }
+    ]
+  }
 ];
 
 // console.log(JSON.stringify(phoneData, null, 4));
-
+console.log(phoneDatacopy);
 var phoneData = [
   {
     id: 1,
@@ -110,7 +110,7 @@ var phoneData = [
     price: 20,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 2,
@@ -124,7 +124,7 @@ var phoneData = [
     price: 148,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 3,
@@ -139,7 +139,7 @@ var phoneData = [
     price: 181,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 4,
@@ -154,7 +154,7 @@ var phoneData = [
     price: 1999,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 5,
@@ -169,7 +169,7 @@ var phoneData = [
     price: 999,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 6,
@@ -184,7 +184,7 @@ var phoneData = [
     price: 20,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 7,
@@ -198,7 +198,7 @@ var phoneData = [
     price: 148,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 8,
@@ -213,7 +213,7 @@ var phoneData = [
     price: 181,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 9,
@@ -228,7 +228,7 @@ var phoneData = [
     price: 1999,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
   },
   {
     id: 10,
@@ -243,10 +243,11 @@ var phoneData = [
     price: 999,
     totalMount: 1,
     slogan:
-      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
-  },
+      "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
+  }
 ];
 
 //  写入浏览器localStorage.setItem("phoneData", JSON.stringify(phoneData));
 
 // 清除localStorage.removeItem("phoneData");
+console.log(phoneData);

@@ -13,12 +13,12 @@ export default {
   name: "MiHeader",
   props: {
     backIconShow: Boolean,
-    cartIconShow: Boolean,
+    cartIconShow: Boolean
   },
   components: {
     BackIcon,
-    CartIcon,
-  },
+    CartIcon
+  }
 };
 </script>
 

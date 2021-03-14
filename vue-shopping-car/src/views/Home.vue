@@ -13,11 +13,11 @@ export default {
   name: "Home",
   components: {
     "mi-header": MiHeader,
-    "phone-list": PhoneList,
+    "phone-list": PhoneList
   },
   mounted() {
     // console.log(this.$store);
     console.log(this.$store.dispatch("setData"));
-  },
+  }
 };
 </script>

@@ -6,9 +6,9 @@
     <div class="info-wrap">
       <h1 class="product-name">{{ item.productName }}</h1>
       <p class="slogan">{{ item.slogan }}</p>
-      <p class="price">$:{{ item.price }}</p>
+      <p class="price">${{ item.price }}</p>
       <p class="button">
-        <button>加入购物车</button>
+        <button @click="addCart(item.price, 'PLUS')">加入购物车</button>
       </p>
     </div>
   </div>
@@ -18,8 +18,17 @@
 export default {
   name: "ListItem",
   props: {
-    item: Object,
+    item: Object
   },
+  methods: {
+    addCart(price, type) {
+      console.log("addPort", price);
+      this.$store.dispatch("setTotal", {
+        type,
+        price: Number(price)
+      });
+    }
+  }
 };
 </script>
 

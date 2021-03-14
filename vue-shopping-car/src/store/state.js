@@ -16,5 +16,5 @@ export default {
     //   totalMount: 2,
     //   totalPrice: 1999 * 2,
     // },
-  ],
+  ]
 };

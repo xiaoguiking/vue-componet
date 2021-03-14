@@ -14,7 +14,7 @@ export default {
         price: 20,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 2,
@@ -28,7 +28,7 @@ export default {
         price: 148,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 3,
@@ -43,7 +43,7 @@ export default {
         price: 181,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 4,
@@ -58,7 +58,7 @@ export default {
         price: 1999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 5,
@@ -73,7 +73,7 @@ export default {
         price: 999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 6,
@@ -88,7 +88,7 @@ export default {
         price: 20,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 7,
@@ -102,7 +102,7 @@ export default {
         price: 148,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 8,
@@ -117,7 +117,7 @@ export default {
         price: 181,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 9,
@@ -132,7 +132,7 @@ export default {
         price: 1999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
       },
       {
         id: 10,
@@ -147,8 +147,8 @@ export default {
         price: 999,
         totalMount: 1,
         slogan:
-          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能",
-      },
+          "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
+      }
     ];
     localStorage.setItem("phoneData", JSON.stringify(phoneData1));
 
@@ -171,7 +171,10 @@ export default {
       phoneData,
       totalMount,
       totalPrice,
-      cartData,
+      cartData
     });
   },
+  setTotal({ commit }, payload) {
+    commit("SET_TOTAL", payload);
+  }
 };

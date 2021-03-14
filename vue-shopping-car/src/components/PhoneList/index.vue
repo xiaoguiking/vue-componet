@@ -15,11 +15,11 @@ import { mapState } from "vuex";
 export default {
   name: "PhoneList",
   components: {
-    "list-item": ListItem,
+    "list-item": ListItem
   },
   computed: {
-    ...mapState(["phoneData"]),
-  },
+    ...mapState(["phoneData"])
+  }
 };
 </script>
 
