@@ -176,5 +176,9 @@ export default {
   },
   setTotal({ commit }, payload) {
     commit("SET_TOTAL", payload);
+  },
+
+  setCart({ commit }, payload) {
+    commit("SET_CART", payload);
   }
 };

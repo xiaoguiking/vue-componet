@@ -18,7 +18,12 @@ export default {
     cartIconShow: Boolean
   },
   computed: {
-    ...mapState(["totalMount"])
+    ...mapState(["totalMount", "totalPrice", "cartData"])
+  },
+  updated() {
+    localStorage.setItem("totalMount", this.totalMount);
+    localStorage.setItem("totalPrice", this.totalPrice);
+    localStorage.setItem("cartData", JSON.stringify(this.cartData));
   }
 };
 </script>

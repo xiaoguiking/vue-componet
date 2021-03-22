@@ -9,6 +9,7 @@ export default {
   },
   SET_TOTAL(state, payload) {
     const { type, price } = payload;
+    console.log(payload, "pay");
     switch (type) {
       case "PLUS":
         state.totalPrice += price;
@@ -22,5 +23,37 @@ export default {
       default:
         break;
     }
+  },
+
+  SET_CART(state, payload) {
+    const { type, id, img, productName, price, slogan } = payload;
+    const index = state.cartData.findIndex(item => item.id === id);
+    if (index === -1) {
+      state.cartData.push({
+        id,
+        img,
+        productName,
+        price,
+        slogan
+      });
+    } else {
+      switch (type) {
+        case "PLUS":
+          state.cartData[index].totalMount += 1;
+          state.cartData[index].totalPrice += price;
+          break;
+        case "MINUS":
+          state.cartData[index].totalMount -= 1;
+          state.cartData[index].totalPrice -= price;
+          if (!state.cartData[index].totalMount) {
+            state.cartData = state.cartData.filter(item => item.id !== id);
+          }
+
+          break;
+        default:
+          break;
+      }
+    }
+    console.log(state, payload, "setCart");
   }
 };

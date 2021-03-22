@@ -7,9 +7,7 @@
       <h1 class="product-name">{{ item.productName }}</h1>
       <p class="slogan">{{ item.slogan }}</p>
       <p class="price">${{ item.price }}</p>
-      <p class="button">
-        <button @click="addCart(item, 'PLUS')">加入购物车</button>
-      </p>
+      <p class="button"></p>
     </div>
   </div>
 </template>
@@ -18,27 +16,9 @@
 export default {
   name: "ListItem",
   props: {
-    item: Object
+    item: Object,
   },
-  methods: {
-    addCart(data, type) {
-      console.log("addPort", data.price);
-      this.$store.dispatch("setTotal", {
-        type,
-        price: Number(data.price),
-        data
-      });
-      const { id, img, productName, price, slogan } = data;
-      this.$store.dispatch("setCart", {
-        type,
-        id,
-        img,
-        productName,
-        price,
-        slogan
-      });
-    }
-  }
+  methods: {},
 };
 </script>
 

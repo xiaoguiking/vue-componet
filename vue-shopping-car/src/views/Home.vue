@@ -9,6 +9,7 @@
 // @ is an alias to /src
 import MiHeader from "../components/Header";
 import PhoneList from "@/components/PhoneList";
+
 export default {
   name: "Home",
   components: {
