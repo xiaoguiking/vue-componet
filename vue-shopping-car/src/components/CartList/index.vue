@@ -5,21 +5,24 @@
       :key="index"
       :item="item"
     ></list-item>
+    <total-panel></total-panel>
   </div>
 </template>
 
 <script>
 import ListItem from "./Item";
 import { mapState } from "vuex";
+import TotalPanel from "@/components/TotalPanel";
 
 export default {
   name: "CarList",
   components: {
     ListItem,
+    TotalPanel
   },
   computed: {
-    ...mapState(["cartData"]),
-  },
+    ...mapState(["cartData"])
+  }
 };
 </script>
 

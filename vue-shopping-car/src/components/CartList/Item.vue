@@ -7,17 +7,29 @@
       <h1 class="product-name">{{ item.productName }}</h1>
       <p class="slogan">{{ item.slogan }}</p>
       <p class="price">${{ item.price }}</p>
-      <p class="button"></p>
+      <p class="button">
+        <Calculator
+          :id="Number(item.id)"
+          :price="Number(item.price)"
+          :totalMount="item.totalMount"
+        />
+      </p>
     </div>
   </div>
 </template>
 
 <script>
+import Calculator from "../Calculator/index";
+
 export default {
-  name: "ListItem",
+  name: "CartItem",
+  components: {
+    Calculator,
+  },
   props: {
     item: Object,
   },
+
   methods: {},
 };
 </script>

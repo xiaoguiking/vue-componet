@@ -12,10 +12,28 @@ import { mapState } from "vuex";
 export default {
   name: "ToTalPanel",
   computed: {
-    ...mapState(["totalPrice"]),
-  },
+    ...mapState(["totalPrice"])
+  }
 };
 </script>
 
 <style lang="less" scoped>
+.total-panel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  z-index: 10;
+  text-align: right;
+  padding-right: 15px;
+
+  .total-price {
+    font-size: 20px;
+    color: orange;
+    font-weight: 700;
+  }
+}
 </style>

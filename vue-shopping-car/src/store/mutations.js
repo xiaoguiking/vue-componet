@@ -45,7 +45,10 @@ export default {
         case "MINUS":
           state.cartData[index].totalMount -= 1;
           state.cartData[index].totalPrice -= price;
+          // 是0 的条件时候
           if (!state.cartData[index].totalMount) {
+            console.log("cartData");
+            // 过滤掉数据
             state.cartData = state.cartData.filter(item => item.id !== id);
           }
 
