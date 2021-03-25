@@ -18,7 +18,7 @@
 export default {
   name: "ListItem",
   props: {
-    item: Object
+    item: Object,
   },
   methods: {
     addCart(data, type) {
@@ -26,19 +26,20 @@ export default {
       this.$store.dispatch("setTotal", {
         type,
         price: Number(data.price),
-        data
+        data,
       });
       const { id, img, productName, price, slogan } = data;
+      let phoneid = Number(id);
       this.$store.dispatch("setCart", {
         type,
-        id,
+        id: phoneid,
         img,
         productName,
         price,
-        slogan
+        slogan,
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

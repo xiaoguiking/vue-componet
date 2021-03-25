@@ -17,11 +17,10 @@ export default {
   components: {
     "mi-header": MiHeader,
     CartList,
-    TotalPanel
-  }, 
+    TotalPanel,
+  },
   mounted() {
-    // console.log(this.$store);
     console.log(this.$store.dispatch("setData"));
-  }
+  },
 };
 </script>

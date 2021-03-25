@@ -15,21 +15,21 @@ export default {
   props: {
     id: Number,
     price: Number,
-    totalMount: Number,
+    totalMount: Number
   },
   methods: {
     setItem(id, price, type) {
       this.$store.dispatch("setTotal", {
         price,
-        type,
+        type
       });
       this.$store.dispatch("setCart", {
         id,
         type,
-        price,
+        price
       });
-    },
-  },
+    }
+  }
 };
 </script>
 

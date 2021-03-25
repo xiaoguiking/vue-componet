@@ -27,7 +27,8 @@ export default {
 
   SET_CART(state, payload) {
     const { type, id, img, productName, price, slogan } = payload;
-    const index = state.cartData.findIndex(item => item.id === id);
+    const index = state.cartData.findIndex(item => Number(item.id) === id);
+    console.log("setcart================>", index)
     if (index === -1) {
       state.cartData.push({
         id,
@@ -49,7 +50,7 @@ export default {
           if (!state.cartData[index].totalMount) {
             console.log("cartData");
             // 过滤掉数据
-            state.cartData = state.cartData.filter(item => item.id !== id);
+            state.cartData = state.cartData.filter(item => Number(item.id) !== id);
           }
 
           break;
