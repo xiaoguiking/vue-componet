@@ -12,13 +12,13 @@ import { mapState } from "vuex";
 export default {
   name: "ToTalPanel",
   computed: {
-    ...mapState(["totalMount", "totalPrice", "cartData"]),
+    ...mapState(["totalMount", "totalPrice", "cartData"])
   },
   updated() {
     localStorage.setItem("totalMount", this.totalMount);
     localStorage.setItem("totalPrice", this.totalPrice);
     localStorage.setItem("cartData", JSON.stringify(this.cartData));
-  },
+  }
 };
 </script>
 

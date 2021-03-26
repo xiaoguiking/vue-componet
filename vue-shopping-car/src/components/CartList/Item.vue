@@ -24,13 +24,13 @@ import Calculator from "../Calculator/index";
 export default {
   name: "CartItem",
   components: {
-    Calculator,
+    Calculator
   },
   props: {
-    item: Object,
+    item: Object
   },
 
-  methods: {},
+  methods: {}
 };
 </script>
 

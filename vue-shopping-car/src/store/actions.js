@@ -11,7 +11,7 @@ export default {
         productName: "三只松鼠_零食大礼包",
         color: "黑色",
         size: "18L",
-        price: 20,
+        price: 2,
         totalMount: 1,
         slogan:
           "Redmi Note 9 5G 天玑800U  18W快充 4800万超清三摄 云墨灰 6GB+128GB 游戏智能"
@@ -161,8 +161,8 @@ export default {
     //   console.log(item);
     //   return item;
     // });
-    localStorage.setItem("a", "1");
-    console.log(localStorage.getItem("a"));
+    // localStorage.setItem("a", "1");
+    // console.log(localStorage.getItem("a"));
 
     console.log(phoneData, "=====phoneData============");
     commit("SET_DATA", {

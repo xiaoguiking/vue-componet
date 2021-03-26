@@ -1,7 +1,7 @@
 <template>
   <div class="calculator">
     <button @click="setItem(id, price, 'PLUS')">+</button>
-    <input type="text" readonly :value="totalMount" />
+    <input type="text" readonly :value="totalMount" class="input-total" />
     <button @click="setItem(id, price, 'MINUS')">-</button>
   </div>
 </template>
@@ -33,4 +33,11 @@ export default {
 };
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+[type="text"] {
+  width: 15px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+</style>
